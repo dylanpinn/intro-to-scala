@@ -163,6 +163,6 @@ object OptionExercises2 {
     * Hint: Use `findJobByHumanId`
     */
   def findJobNameByHumanId(humanId: HumanId): Option[String] = {
-    findJobByHumanId(humanId).map(job => job.name)
+    findJobByHumanId(humanId).map(_.name)
   }
 }
